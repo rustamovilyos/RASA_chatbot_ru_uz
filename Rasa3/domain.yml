@@ -1,0 +1,59 @@
+version: "3.1"
+
+intents:
+  - greet_ru
+  - greet_uz
+  - checking_the_queue_in_the_student_dormitory_ru
+  - checking_the_queue_in_the_student_dormitory_uz
+  - apply_for_students_dormitory_ru
+  - apply_for_students_dormitory_uz
+  - private_invitation_of_foreign_citizens_ru
+  - private_invitation_of_foreign_citizens_uz
+  - view_airtickets_on_Uzairways_ru
+  - view_airtickets_on_Uzairways_uz
+  - obtaining_certificate_of_return_to_UZB_ru
+  - obtaining_certificate_of_return_to_UZB_uz
+  - certification_of_applicants_for_judicial_managers_ru
+  - certification_of_applicants_for_judicial_managers_uz
+  - registration_of_permanent_residence_abroad_ru
+  - registration_of_permanent_residence_abroad_uz
+  - calculate_drip_irrigation_ru
+  - calculate_drip_irrigation_uz
+
+responses:
+  utter_greet_ru:
+    - text: "Привет, С чем могу помочь?"
+    - text: "Доброе времени суток"
+    - text: "Привет, чего желаете?"
+    - text: "Привет! Как я могу помочь вам сегодня?"
+    - text: "Привет, чем могу помочь?"
+    - text: "Здравствуйте! Какая услуга вас интересует?"
+
+  utter_greet_uz:
+    - text: "Salom, qanday yordam berishim mumkin?"
+    - text: "Salom, qanday savolingiz bor?"
+    - text: "Salom, qanday yordam kerak?"
+    - text: "Salom, qanday yordam bera olaman?"
+    - text: "Salom! Sizga qanday yordam berishim mumkin?"
+
+actions:
+  - action_student_dormitory_info_ru
+  - action_student_dormitory_info_uz
+  - action_apply_for_students_dormitory_ru
+  - action_apply_for_students_dormitory_uz
+  - action_private_invitation_of_foreign_citizens_ru
+  - action_private_invitation_of_foreign_citizens_uz
+  - action_view_air_tickets_on_uzairways_ru
+  - action_view_air_tickets_on_uzairways_uz
+  - action_obtaining_certificate_of_return_to_UZB_ru
+  - action_obtaining_certificate_of_return_to_UZB_uz
+  - action_certification_of_applicants_for_judicial_managers_ru
+  - action_certification_of_applicants_for_judicial_managers_uz
+  - action_registration_of_permanent_residence_abroad_ru
+  - action_registration_of_permanent_residence_abroad_uz
+  - action_drip_irrigation_info_ru
+  - action_drip_irrigation_info_uz
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

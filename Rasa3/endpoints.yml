@@ -1,0 +1,16 @@
+action_endpoint:
+# regions = us, eu, au, ap, sa, jp, in
+# ngrok http 5055 --region us
+#  url: "https://8adf-195-158-3-102.ngrok-free.app/webhook"
+
+# localhost
+  url: "http://localhost:5055/webhook"
+
+tracker_store:
+  type: SQL
+  dialect: "postgresql"
+  url: "postgresql://rasauser:rasapass@localhost:5432/rasadb"
+
+event_broker:
+  type: "redis"
+  url: "redis://localhost:6379/0"

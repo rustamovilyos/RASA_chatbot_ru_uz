@@ -1,0 +1,20 @@
+# import csv
+#
+#
+# def get_info_from_csv_test():
+#     with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+#         csv_reader = csv.DictReader(file_reader, delimiter=',')
+#         for rows in csv_reader:
+#             if rows['Xizmat nomi - ru'] == 'Калькулятор капельного орошения':
+#                 print(rows['Muxlisa text - RU'])
+
+# [{'intent': 'greet',
+#   'examples': '- хей\n- привет\n- прив\n- здравствуйте\n- Здравствуйте\n- Доброе утро\n- доброе утро\n- Привет\n- Добрый день\n- добрый вечер\n- Добрый вечер\n'},
+#  {'intent': 'greet_UZ',
+#   'examples': '- hey\n- salom\n- Assalomu Alaykum\n- Assalom Alaykum\n- Hayrli kun\n- Hayrli tong\n- Hayrli kech\n- Assalom\n'},
+#  {'intent': 'calculate_drip_irrigation',
+#   'examples': '- Как рассчитать капельное орошение для моего сада?\n- Сколько капельниц мне нужно для капельного орошения 100 квадратных метров земли?\n- Какая будет экономия воды при использовании капельного орошения на моем газоне?\n- Как определить оптимальное расстояние между капельницами для моей рассады?\n- Могу ли я использовать капельное орошение для полива цветов в горшках?\n- Какие параметры важны при расчете капельного орошения для моего огорода?\n- Сколько времени потребуется для полива моего огорода с помощью капельного орошения?\n- Как выбрать подходящую систему капельного орошения для моего участка?\n- Какие растения лучше всего реагируют на капельное орошение?\n- Какой диаметр трубы мне нужен для системы капельного орошения?\n- Какие материалы необходимы для установки капельной системы полива?\n- Могу ли я рассчитать экономию воды, используя капельное орошение?\n- Какой будет расход воды при капельном орошении на моем участке?\n- Как узнать скорость потока воды для капельного орошения моего сада?\n- Какие преимущества предоставляет капельное орошение для моего садового участка?\n'},
+#  {'intent': 'checking_the_queue_in_the_student_dormitory',
+#   'examples': '- Как подать заявление на размещение в общежитии для первокурсников?\n- Что нужно для того, чтобы подать заявку на общежитие для первого курса?\n- Какой процесс подачи заявления на общежитие для новых студентов?\n- Могу ли я подать заявление на общежитие онлайн?\n- Где находится онлайн-заявка на общежитие для первокурсников?\n- Какие документы мне понадобятся для подачи заявки на общежитие?\n- Как долго занимает рассмотрение заявки на общежитие?\n- Как узнать статус моей заявки на общежитие?\n- Есть ли какие-либо особенности при подаче заявки на общежитие для первокурсников?\n- Какие условия размещения в общежитии для новых студентов?\n- Какие преимущества предоставляет онлайн-подача заявки на общежитие?\n- Могу ли я выбрать конкретное общежитие при подаче заявки?\n- Как происходит оповещение о принятии решения по моей заявке?\n- Как связаться с администрацией общежития для уточнения деталей?\n- Какие шаги мне нужно предпринять после одобрения заявки на общежитие?\n'},
+#  {'intent': 'checking_the_queue_in_the_student_dormitory_UZ',
+#   'examples': "- Birinchi kurslar yotoqxona uchun qanday ariza berishim mumkin?\n- Birinchi kursda yotoqxonadan joy olish uchun nima qilish kerak?\n- Yangi talabalar uchun yotoqxonaga hujjat topshirish jarayoni qanday?\n- Yotoqxona uchun onlayn ariza topshirish mumkinmi?\n- Birinchi kurs talabalari yotoqxonaga onlayn ariza qayerda topshirsa bo'ladi?\n- Yotoqxonaga joylashish uchun qanday hujjatlar kerak bo'ladi?\n- Yotoqxonaga topshirilgan arizani ko'rib chiqish muddati qancha?\n- Talabalar turar joyi uchun arizamning holatini qanday bilsam bo'ladi?\n- Birinchi kurs talabalari uchun yotoqxonaga hujjat topshirishda o‘ziga xos afzalliklari bormi?\n- Yangi talabalar uchun yotoqxonada yashash sharoitlari qanday?\n- Yotoqxonaga onlayn ariza topshirishning qanday afzalliklari bor?\n- Hujjat topshirishda ma'lum bir yotoqxonani tanlay olamanmi?\n- Murojaatim bo‘yicha qaror qabul qilinganligi haqida menga qanday xabar beriladi?\n- Tafsilotlarni aniqlashtirish uchun yotoqxona ma'muriyati bilan qanday bog'lanishim mumkin?\n- Yotoqxonaga arizam ma'qullangandan keyin nimalar qilishim kerak?\n"}]

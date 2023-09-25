@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'appdir/css/chatbot_style.css' %}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+</head>
+<body>
+
+ <!---Chat Board Start-->
+<div class="container">
+    <div class="widget">
+        <div class="chat_header">
+            <!--Add the name of the bot here -->
+            <span style="color:white;margin-left: 5px;">🤖</span>
+            <span style="color:white;margin-right: 5px;float:right;margin-top: 5px;" id="close">
+               <i class="material-icons">close</i>
+               </span>
+        </div>
+        <!--Chatbot contents goes here -->
+        <div class="chats" id="chats">
+            <div class="clearfix"></div>
+        </div>
+        <!--user typing indicator -->
+        <div class="keypad">
+            <input type="text" id="keypad" class="usrInput browser-default" placeholder="Type a message..."
+                   autocomplete="off">
+        </div>
+    </div>
+    <!--bot widget -->
+    <div class="profile_div" id="profile_div">
+        <img class="imgProfile" src="{% static 'appdir/img/bot.ico' %}"/>
+    </div>
+</div>
+
+    <!---Chat Board End-->
+
+<script type="text/javascript" src="{% static 'appdir/js/chatbot.js' %}"></script>
+<script type="text/javascript" src="{% static 'appdir/js/jquery-3.6.0.min.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+        crossorigin="anonymous"></script>
+</body>
+</html>

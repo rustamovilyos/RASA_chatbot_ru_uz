@@ -1,0 +1,92 @@
+version: "3.1"
+
+rules:
+
+  # 1 -------------------------
+  - rule: User asks about checking queue in student dormitory in russian
+    steps:
+      - intent: checking_the_queue_in_the_student_dormitory_ru
+      - action: action_student_dormitory_info_ru
+
+  - rule: User asks about checking queue in student dormitory in uzbek
+    steps:
+      - intent: checking_the_queue_in_the_student_dormitory_uz
+      - action: action_student_dormitory_info_uz
+
+  # 2 -------------------------
+  - rule: User asks about applying for students dormitory in russian
+    steps:
+      - intent: apply_for_students_dormitory_ru
+      - action: action_apply_for_students_dormitory_ru
+
+  - rule: User asks about applying for students dormitory in uzbek
+    steps:
+      - intent: apply_for_students_dormitory_uz
+      - action: action_apply_for_students_dormitory_uz
+
+   # 3 -------------------------
+  - rule: User asks about private invitation of foreign citizens in russian
+    steps:
+      - intent: private_invitation_of_foreign_citizens_ru
+      - action: action_private_invitation_of_foreign_citizens_ru
+
+  - rule: User asks about private invitation of foreign citizens in uzbek
+    steps:
+      - intent: private_invitation_of_foreign_citizens_uz
+      - action: action_private_invitation_of_foreign_citizens_uz
+
+  # 4 --------------------------------
+  - rule: User asks about view airtickets on Uzairways in russian
+    steps:
+      - intent: view_airtickets_on_Uzairways_ru
+      - action: action_view_air_tickets_on_uzairways_ru
+
+  - rule: User asks about view airtickets on Uzairways in uzbek
+    steps:
+      - intent: view_airtickets_on_Uzairways_uz
+      - action: action_view_air_tickets_on_uzairways_uz
+
+  # 5 -------------------------
+  - rule: User asks about obtaining certificate of return to UZB in russian
+    steps:
+      - intent: obtaining_certificate_of_return_to_UZB_ru
+      - action: action_obtaining_certificate_of_return_to_UZB_ru
+
+  - rule: User asks about obtaining certificate of return to UZB in uzbek
+    steps:
+      - intent: obtaining_certificate_of_return_to_UZB_uz
+      - action: action_obtaining_certificate_of_return_to_UZB_uz
+
+  # 6 -------------------------
+  - rule: User asks about certification of applicants for judicial managers in russian
+    steps:
+      - intent: certification_of_applicants_for_judicial_managers_ru
+      - action: action_certification_of_applicants_for_judicial_managers_ru
+
+  - rule: User asks about certification of applicants for judicial managers in uzbek
+    steps:
+      - intent: certification_of_applicants_for_judicial_managers_uz
+      - action: action_certification_of_applicants_for_judicial_managers_uz
+
+  # 7 -------------------------
+  - rule: User asks about registration of permanent residence abroad in russian
+    steps:
+      - intent: registration_of_permanent_residence_abroad_ru
+      - action: action_registration_of_permanent_residence_abroad_ru
+
+  - rule: User asks about registration of permanent residence abroad in uzbek
+    steps:
+      - intent: registration_of_permanent_residence_abroad_uz
+      - action: action_registration_of_permanent_residence_abroad_uz
+
+  # 12 -------------------------
+  - rule: User asks about drip irrigation calculator in russian
+    steps:
+      - intent: calculate_drip_irrigation_ru
+      - action: action_drip_irrigation_info_ru
+
+  - rule: User asks about drip irrigation calculator in uzbek
+    steps:
+      - intent: calculate_drip_irrigation_uz
+      - action: action_drip_irrigation_info_uz
+

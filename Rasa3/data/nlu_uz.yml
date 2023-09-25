@@ -1,0 +1,294 @@
+version: "3.1"
+
+nlu:
+  - intent: greet_uz  # index = 0
+    examples: |
+      - hey
+      - salom
+      - Assalomu Alaykum
+      - Assalom Alaykum
+      - Hayrli kun
+      - Hayrli tong
+      - Hayrli kech
+      - Assalom
+
+
+
+  - intent: checking_the_queue_in_the_student_dormitory_uz  # index = 1
+    # Талабалар турар жойига навбатни текшириш (1-курс талабалари учун)
+    examples: |
+      - Talabalar turar joyiga navbatni tekshirish (1-kurs talabalari uchun)
+      - Talabalar turar joyiga navbatni tekshirish
+      - 1-kurs talabalari uchun navbatni tekshirish qachon boshlangan?
+      - Navbatni tekshirishdagi javoblarni kim beradi?
+      - Talabalar navbatni tekshirishni qanday bajaradi?
+      - Tekshirishning jarayoni nima?
+      - Talabalar turar joyiga navbatni tekshirishda qanday bosqichlardan o‘tish kerak?
+      - Navbatni tekshirishning muddati nima?
+      - Yotoqxonaga arizalar holatini qanday tekshirishnim mumkin?
+      - Talabalar turar joyiga navbatni tekshirish kim belgilaydi?
+      - Yotoqxona uchun navbatni tekshirishdagi maqsad nima?
+      - Yotoqxona uchun arizalarni tekshirish qachon tugatiladi?
+      - Navbatni tekshirishni kim bajaradi?
+      - Talabalar turar joyiga navbatni tekshirish qanday tashkil etiladi?
+      - Tekshirishni bajarish uchun kerak bo‘ladigan shartlar nima?
+      - Navbatni tekshirish qachon ishonch beradi?
+      - Yotoqxona uchun navbatni tekshirishda kerak bo'ladigan hujjatlar
+      - Turar joy uchun navbatni tekshirishda kerak bo‘ladigan hujjatlar qanday tayyorlanadi?
+
+
+  - intent: apply_for_students_dormitory_uz  # index = 2
+    # Талабалар турар жойига жойлашиш учун ариза юбориш (1-курс талабалари учун)
+    examples: |
+      - Talabalar turar joyiga joylashish uchun ariza yuborish (1-kurs talabalari uchun)
+      - Birinchi kurslar yotoqxona uchun qanday ariza berishim mumkin?
+      - Birinchi kursda yotoqxonadan joy olish uchun nima qilish kerak?
+      - Yangi talabalar uchun yotoqxonaga hujjat topshirish jarayoni qanday?
+      - Yotoqxona uchun onlayn ariza topshirish mumkinmi?
+      - Birinchi kurs talabalari yotoqxonaga onlayn ariza qayerda topshirsa bo'ladi?
+      - Yotoqxonaga joylashish uchun qanday hujjatlar kerak bo'ladi?
+      - Yotoqxonaga topshirilgan arizani ko'rib chiqish muddati qancha?
+      - Talabalar turar joyi uchun arizamning holatini qanday bilsam bo'ladi?
+      - Birinchi kurs talabalari uchun yotoqxonaga hujjat topshirishda o‘ziga xos afzalliklari bormi?
+      - Yangi talabalar uchun yotoqxonada yashash sharoitlari qanday?
+      - Yotoqxonaga onlayn ariza topshirishning qanday afzalliklari bor?
+      - Hujjat topshirishda ma'lum bir yotoqxonani tanlay olamanmi?
+      - Murojaatim bo‘yicha qaror qabul qilinganligi haqida menga qanday xabar beriladi?
+      - Tafsilotlarni aniqlashtirish uchun yotoqxona ma'muriyati bilan qanday bog'lanishim mumkin?
+      - Yotoqxonaga arizam ma'qullangandan keyin nimalar qilishim kerak?
+
+
+  - intent: private_invitation_of_foreign_citizens_uz  # index = 3
+    # Чет эл фуқароси ва фуқаролиги бўлмаган шахсларни Ўзбекистон Республикасига хусусий таклиф қилишга ариза юбориш
+    examples: |
+      - Chet el fuqarosi va fuqaroligi bo‘lmagan shaxslarni O‘zbekiston Respublikasiga xususiy taklif qilishga ariza yuborish
+      - Xususiy taklif berish uchun ariza qanday yuboriladi?
+      - Ariza yuborishning shartlari nima?
+      - Xususiy taklif qilish uchun ariza yuborishda qanday tartib bor?
+      - Ariza yuborish jarayoni qancha vaqtda amalga oshiriladi?
+      - Xususiy taklif uchun ariza tayyorlash uchun qanday hujjatlar kerak?
+      - Ariza qanday formatda yuborilishi kerak?
+      - Ariza qanday yuborilishi kerak: onlayn yoki oflayn?
+      - Xususiy taklif uchun ariza yuborishni qanday muddatda qilish kerak?
+      - Xususiy taklif uchun ariza qanday qabul qilinadi?
+      - Ariza yuborishning xususiy bo'yicha muddati qanday?
+      - Xususiy taklif uchun ariza yuborishning o'zgarmagan muddati qanday?
+      - Ariza yuborish jarayonida o'zgarmagan muddat necha kun?
+      - Ariza yuborish uchun қanday hujjatlar va ma'lumotlar kerak?
+      - Xususiy taklif uchun ariza yuborishda qaysi hujjatlar taqdim etilishi kerak?
+      - Ariza yuborish jarayonida kerakli hujjatlarni yuborish tartibi nima?
+      - Xususiy taklif uchun ariza yuborishda necha tanga to'lash kerak?
+      - Ariza yuborish uchun to'lov qilish shartlari nima?
+      - Xususiy taklif uchun ariza yuborishni qanday amalga oshirish mumkin?
+      - Ariza yuborish jarayonida murojaat qilish uchun necha marta chaqirish kerak?
+      - Xususiy taklif uchun ariza qanday boshqariladi?
+      - Ariza qabul qilish uchun kerakli hujjatlarni boshqa muddatda yuborish mumkinmi?
+
+  - intent: view_airtickets_on_Uzairways_uz  # index = 4
+    # Uzairways авиакомпаниясида мавжуд авиачипталарни кўриш
+    examples: |
+      - Uzairways aviakompaniyasida mavjud aviachiptalarni ko‘rish
+      - Uzairways aviachiplari jadvalini qanday ko'rish mumkin?
+      - Uzairways aviasyohatlarining narxlari qanday aniqlanadi?
+      - Bilet sotib olish uchun Uzairways saytidan qanday foydalanish kerak?
+      - Uzairways aviachiplari haqida qanday ma'lumot topish mumkin?
+      - Uzairways aviachiplarining reyslarining qaysi shaharlarga o'tadiganini bilib olish uchun qanday usulni ishlatish kerak?
+      - Uzairways aviachiplari to'g'risida yangi ma'lumotlar qayerda topiladi?
+      - Uzairways aviachiplari uchun qanday ariza qilib olish mumkin?
+      - Uzairways aviachiplari reyslari jadvalini qanday yuklab olish mumkin?
+      - Uzairways aviachiplarining yangi tariflari qanday aniqlanadi?
+      - Uzairways aviachiplari uchun yo'l harakati qanday amalga oshiriladi?
+      - Uzairways aviachiplari haqida so'nggi yangiliklarni qayerda o'qish mumkin?
+      - Uzairways aviachiplari uchun qanday bagajni olib borish mumkin?
+      - Uzairways aviachiplari narxlari qanday hisoblanadi?
+      - Uzairways aviachiplari uchun qanday xizmatlar mavjud?
+      - Uzairways aviachiplari uchun qanday tariflar va chegirmalar mavjud?
+      - Uzairways aviachiplari reyslari uchun xizmatlar qanday taqdim etiladi?
+      - Uzairways aviachiplari reyslarini qanday to'xtatish mumkin?
+      - Uzairways aviachiplari uchun onlayn chipta bron qilish qanday amalga oshiriladi?
+      - Uzairways aviachiplari uchun chipta alish uchun qanday platformalar mavjud?
+      - Uzairways aviachiplari reyslari uchun xizmatlar va afzalliklar qanday?
+      - Uzairways aviachiplari to'g'risida barcha ma'lumotlar qayerda topiladi?
+
+  - intent: obtaining_certificate_of_return_to_UZB_uz  # index = 5
+    # O‘zbekiston Respublikasiga qaytish uchun guvohnoma olish
+    examples: |
+      - O‘zbekiston Respublikasiga qaytish uchun guvohnoma olish
+      - O‘zbekiston Respublikasiga qaytish uchun guvohnoma qanday olinadi?
+      - Qaytish uchun guvohnoma olish uchun qaysi hujjatlar kerak?
+      - Agar men vaqtinchalik chet elda bo‘lsam, guvohnoma qaytarishni qanday olishim mumkin?
+      - Guvohnoma olish uchun murojaat qilish lozim bo‘lgan joy qayerda?
+      - Guvohnoma olish uchun ariza qanday topshiriladi?
+      - Guvohnoma olish uchun ariza berish muddatlari nima?
+      - Guvohnoma olish uchun fotoni qanday taqdim qilish kerak?
+      - Men onlayn tarzda qaytish guvohnomasi olishim mumkinmi?
+      - Qaytish guvohnomasi olish jarayoni qancha vaqt o‘z ichiga oladi?
+      - Guvohnoma olish uchun murojaat qilish uchun qanday hujjatlar mo‘ljal qilinadi?
+      - Guvohnoma olishda qanday qo‘shimcha hujjatlar talab qilinadi?
+      - Guvohnoma olish uchun ariza qabul qilinganligini qanday bilishim mumkin?
+      - Ariza berilgan guvohnoma olish jarayonini qanday kuzatish mumkin?
+      - Men o‘zimni bir yil va undan ko‘proq uchun guvohnoma olishim mumkinmi?
+      - Guvohnoma olishga haqqa ega bo‘lganligimi ko‘rsatadigan qaysi hujjatlarni taqdim qilish kerak?
+      - Guvohnoma olish jarayoni rad etilgan bo‘lsa, qanday harakat qilish kerak?
+      - Bolalar uchun guvohnoma olish jarayoni qanday o‘tadi?
+      - Guvohnoma olish jarayonida to‘lovlar va to‘lovlar qanday amalga oshiriladi?
+      - Guvohnoma olishning amal qilish muddati qanday?
+      - Qaytish guvohnomasi ishlatish bo‘yicha qanday cheklar va qoidalar mavjud?
+      - Men o‘zimni zaranjda guvohnoma arizasini yuborishim mumkinmi?
+      - Guvohnoma olish jarayonini student sifatida qanday amalga oshirish kerak?
+      - Qaytish guvohnomasi tarqatuvchi tashkilot bilan bog‘lanish uchun qanday aloqa qilish mumkin?
+
+  - intent: certification_of_applicants_for_judicial_managers_uz  # index = 6
+    # Суд бошқарувчилари талабгорларини аттестациядан (қайта аттестациядан) ўтказиш ва уларга малака аттестатини бериш
+    examples: |
+      - Sud boshqaruvchilari talabgorlarini attestatsiyadan (qayta attestatsiyadan) o‘tkazish va ularga malaka attestatini berish
+      - Sud boshqaruvchilari qanday attestatsiyadan o‘tkazilishi mumkin?
+      - Attestatsiyada talabgorlar uchun talablar va shartlar qanday?
+      - Talabgorlar attestatsiyaga qatnashish uchun qanday hujjatlar kerak?
+      - Sud boshqaruvchilari malaka attestatini olish uchun ariza qanday berilishi qilinadi?
+      - Attestatsiyaning qanday muddatlari va malaka attestatini berish muddatlari qanday?
+      - Talabgorlar attestatsiyaning natijalarini qanday bilmoq mumkin?
+      - Sud boshqaruvchilari qanday jaraiyuda attestatsiya o‘tish mumkin?
+      - Attestatsiyada sud boshqaruvchilari uchun baholash maydonlari qanday?
+      - 2021-yildan boshlab attestatsiya protsesidagi o‘zgarishlar qanday?
+      - Attestatsiyada sud boshqaruvchilari qanday qo‘shimcha hujjatlar talab qilinadi?
+      - Attestatsiyada sud boshqaruvchilari uchun talabgorlarni tasdiqlash uchun qanday hujjatlar malakalari shart qilinadi?
+      - Sud boshqaruvchilari attestatsiyasini qanday onlayn qo‘yish imkoniyati mavjudmi?
+      - Attestatsiya protsessi qanday vaqt oladi?
+      - Sud boshqaruvchilari attestatsiyada ishtirok etish huquqlari qanday?
+      - Attestatsiyada qanday o‘zgarishlar qanday muddatlarda amalga oshirilgan?
+      - Mening attestatsiya so‘rovim bekor qilinsa, qanday harakat qilishim kerak?
+      - Sud boshqaruvchilari uchun tavsiya etiladigan darslar va kurslar qanday?
+      - Malaka attestatining amal qilish muddatlari qanday?
+      - Talabgorlarga sud boshqaruvchilari uchun qo‘shimcha resurslar qanday?
+
+  - intent: registration_of_permanent_residence_abroad_uz  # index = 7
+    # Хорижга доимий яшашга чиқишни расмийлаштириш
+    examples: |
+      - Xorijga doimiy yashashga chiqishni rasmiylashtirish
+      - Xorijga doimiy yashashga chiqishni rasmiylashtirish uchun qanday qoshimcha hujjatlar kerak?
+      - Xorijga chiqish protsessini qanday orqaga solish mumkin?
+      - Qanday hujjatlar ishlatilishi kerak xorijga doimiy yashashga chiqishda?
+      - Xorijga chiqish protsessi qanday o‘tadi?
+      - Xorijda yashashga chiqish uchun qanday hisob-kitoblar talab qilinadi?
+      - Qanday aloqalar bilan bog‘lanib turgan kerak, xorijda yashash uchun chiqishni rasmiylashtirishda?
+      - Xorijga chiqish uchun qanday o‘quv kurslari yoki treninglar mavjud?
+      - Xorijga chiqish jadvali va muddatlari qanday?
+      - Hamkorlik sanʼatlari xorijga doimiy yashashga chiqishda qanday hamkorlik qilishi kerak?
+      - Xorijga chiqish hamkorlik jaraĭoni qanday boshlanadi?
+      - Xorijda yashashga chiqish uchun qanday qanday moliya tarmoqlari bor?
+      - Qanday qarzdorliklari bor, xorijda doimiy yashash uchun chiqishni rasmiylashtirishda?
+      - Xorijga chiqishdan qaytarishi kerak qanday?
+      - Xorijda yashashga chiqishning diplomatik tarmoqlari qanday?
+      - Xorijga chiqishda joriylashtiriladigan dokumenlarni muddati qanday?
+      - Xorijda yashashga chiqish haqida moliyatiy masalalarni kim yordam beradi?
+      - Xorijga chiqishdan so‘ng qanday bank xizmatlari olishi mumkin?
+      - Qanday diplomatik aloqalar bilan bog‘lanib turgan kerak, xorijda yashash uchun chiqish uchun?
+
+
+
+  - intent: applicant_test_result_uz  # index = 8
+    # Абитуриент тест синовлари натижаси билан танишиш
+    examples: |
+      - Abituriyent test sinovlari natijasi bilan tanishish
+      - Talabalik test sinovlari natijalari qanday aniqlanadi?
+      - Test sinovlari natijalari qanday olish mumkin?
+      - Natijalar qachon e'lon qilinadi?
+      - Test sinovlari natijalari qancha muddat davomida amal qiladi?
+      - Natijalarimni qanday tekshirishim mumkin?
+      - Test sinovlarining natijalari internet orqali qanday olish mumkin?
+      - Test sinovlari natijalari qancha bali qanday beriladi?
+      - Natijalar haqida qanday ma'lumot olishim mumkin?
+      - Test sinovlari natijalari qaysi manzilga e'lon qilinadi?
+      - Test natijalari o'qituvchilar yoki universitetlar tomonidan qanday tuzatiladi?
+      - Natijalarni qanday elektronik shaklda olish mumkin?
+      - Test sinovlari natijalari qanday qaytarilib beriladi?
+      - Test sinovlarining natijalari qanday to'g'risida ma'lumot beradi?
+      - Natijalarimni qanday tezda olishim mumkin?
+      - Test sinovlari natijalari qanday aniqlanadi?
+      - Natijalarimni qanday nazorat qilish kerak?
+      - Test sinovlari natijalari haqida yana ma'lumot berishingiz mumkinmi?
+      - Natijalarimni qanday yuklab olishim mumkin?
+      - Test sinovlari natijalari qanday taqdim etiladi?
+      - Natijalarimni qanday tekshirishim mumkin?
+
+  - intent: submit_application_for_tractor_driver_exam_uz  # 9
+    # Тракторчи-машинист гувоҳномасини олиш учун имтиҳон топширишга рухсат бериш
+    examples: |
+      - Traktorchi-mashinist guvohnomasini olish uchun imtihon topshirishga ruxsat berish
+      - Traktorchi-mashinist guvohnomasi olish uchun imtihon topshirishni bilmoqchiman, qanday qilib boshlash kerak?
+      - Traktorchi-mashinist guvohnomasi olish uchun imtihon topshirish yoki uni yangilash belgisi berish uchun qanday amalga oshiriladi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday hujjatlarni talab qilishi mumkin?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari nima ichidan iborat?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday mavzularni oxvatlaydi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday muddatlarda olib boriladi?
+      - Imtihonlar qanday nazorat qilinadi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday amalga oshiriladi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari tartibi qanday?
+      - Imtihonlar qanday tayyorlangan?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari yangilash kurslari mavjudmi?
+      - Imtihonlar yoki guvohnoma talablarini hozirlashda yordam beradimi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday o‘tadi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari narxi qanday?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari vaqti qanday?
+      - Imtihonlar yoki guvohnoma bahosi qanday beriladi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari oxirgi muddatlari qanday?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari olingach nima qilish kerak?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari natijalari qanday aytiladi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari qanday yozib beriladi?
+      - Traktorchi-mashinist guvohnomasi olish imtihonlari nima uchun tayyorlangan?
+
+  - intent: replacing_tractor_drivers_license_uz  # 10
+    #  Тракторчи-машинист гувоҳномасини алмаштириш ёки йўқолгани ўрнига янгисини олиш
+    example: |
+      - Traktorchi-mashinist guvohnomasini almashtirish yoki yo‘qolgani o‘rniga yangisini olish
+      - Traktorchi-mashinist guvohnomasini almashtirish jarayoni qanday o‘tadi?
+      - Guvohnoma almashtirish uchun qanday hujjatlar kerak?
+      - Guvohnoma almashtirish uchun qancha vaqt kerak?
+      - Yangi guvohnoma olish jarayoni qanday o‘tadi?
+      - Guvohnoma almashtirish jarayoni qancha muddat davom etadi?
+      - Guvohnoma almashtirish uchun qancha to‘lovlarni muddati boricha o‘tish kerak?
+      - Guvohnoma almashtirish uchun onlayn ariza topshirish mumkinmi?
+      - Guvohnoma almashtirish uchun qancha to‘lov qilish kerak?
+      - Guvohnoma almashtirish jarayoni qanday amalga oshiriladi?
+      - Guvohnoma almashtirish uchun qanday muddatda natijalar ochiladi?
+      - Guvohnoma almashtirish uchun qanday ma’lumotlarni taqdim etish kerak?
+      - Guvohnoma almashtirish uchun qanday shartlar bajariladi?
+      - Guvohnoma almashtirish jarayoni qancha muddat davom etadi?
+      - Guvohnoma almashtirish jarayonida yordam beradigan xizmatlar mavjudmi?
+      - Guvohnoma almashtirish jarayonida muammolar chiqqanda nima qilish kerak?
+      - Guvohnoma almashtirish uchun qanday qulayliklar mavjud?
+      - Guvohnoma almashtirish jarayonida muammolar chiqqanda nima qilish kerak?
+      - Guvohnoma almashtirish uchun qanday ma’lumotlarni to‘ldirish kerak?
+      - Guvohnoma almashtirish jarayonida qanday qaror qabul qilinadi?
+      - Guvohnoma almashtirish jarayonida nima bilan yordam beriladi?
+
+
+  - intent: calculate_drip_irrigation_uz  # index = 11
+    # Томчилатиб суғориш калькулятори
+    examples: |
+      - Tomchilatib sug‘orish kalkulyatori
+      - Tomchilatib sug‘orish kalkulyatori nima uchun foydalaniladi?
+      - Sug‘orish kalkulyatori qanday ishlaydi?
+      - Yer yuzasi maydonini kiritib, sug‘orishni qanday hisoblash mumkin?
+      - Tomchilatib sug‘orish kalkulyatori qanday yordam bera olishi mumkin?
+      - Sug‘orishni to‘chilatib bera olish uchun kerakli ma'lumotlar nima?
+      - Kalkulyator orqali sug‘orishni qanday amalga oshirish mumkin?
+      - Sug‘orishni to‘chilatib bera olish jarayoni qanday o‘tkaziladi?
+      - Tomchilatib sug‘orish kalkulyatoridan foydalanishni boshlash uchun qanday qadam qilish kerak?
+      - Sug‘orish kalkulyatori kiritish jarayoni qanday o‘tkaziladi?
+      - Kalkulyator orqali sug‘orishni hisoblash uchun qanday formulalar ishlatiladi?
+      - Tomchilatib sug‘orish kalkulyatori nima uchun juda foydali?
+      - Sug‘orishni to‘chilatib bera olishni qanday o‘rganish kerak?
+      - Yer yuzasi maydonini kiritib, sug‘orishni hisoblash uchun qanday ma'lumotlar kerak?
+      - Sug‘orish kalkulyatori bilan ishlashning asosiy qadamlari nima?
+      - Tomchilatib sug‘orish kalkulyatori foydalanishni o‘rgangan odam nima haqida aytadi?
+      - Sug‘orish kalkulyatorini foydalanish o‘rganish uchun qanday resurslar mavjud?
+      - Yer yuzasi maydonini kiritib sug‘orish kalkulyatorini ishlatishning oson usullari nima?
+      - Sug‘orish kalkulyatori orqali nima qanday sug‘orishni to‘chilatib bera olish mumkin?
+      - Tomchilatib sug‘orish kalkulyatorini o‘rganish qanday boshlanadi?
+      - Sug‘orish kalkulyatorini ishlatish uchun qanday ma'lumotlar kerak?
+      - Sug‘orish kalkulyatori qanday ishlaydi?
+
+
+

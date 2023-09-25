@@ -1,0 +1,24 @@
+version: "3.1"
+
+stories:
+
+- story: User asks about drip irrigation calculator
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: calculate_drip_irrigation_ru
+  - action: action_drip_irrigation_info_ru
+
+- story: User asks about checking queue in student dormitory
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: checking_the_queue_in_the_student_dormitory_ru
+  - action: action_student_dormitory_info_ru
+
+- story: User asks about checking queue in student dormitory
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: checking_the_queue_in_the_student_dormitory_uz
+  - action: action_student_dormitory_info_uz
