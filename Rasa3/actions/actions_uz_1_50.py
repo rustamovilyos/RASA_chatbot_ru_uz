@@ -179,10 +179,10 @@ class ActionObtainingCertificateOfReturnToUzbUz(Action):  # 5
                     for rows in csv_reader:
                         if rows['Xizmat nomi - uz'] == xizmat_nomi:
                             detail_info = rows['Muxlisa text - UZ']
-                            link_ru = rows['Link ru']
+                            link_uz = rows['Link uz - lotincha']
                             dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
                                                      f"Xizmat haqida ma'lumot: {detail_info}")
-                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_ru}'>{link_ru}</a>")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
 
@@ -216,10 +216,10 @@ class ActionCertificationOfApplicantsForJudicialManagersUz(Action):  # 6
                     for rows in csv_reader:
                         if rows['Xizmat nomi - uz'] == xizmat_nomi:
                             detail_info = rows['Muxlisa text - UZ']
-                            link_ru = rows['Link ru']
+                            link_uz = rows['Link uz - lotincha']
                             dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
                                                      f"Xizmat haqida ma'lumot: {detail_info}")
-                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_ru}'>{link_ru}</a>")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
 
@@ -252,10 +252,10 @@ class ActionRegistrationOfPermanentResidenceAbroadUz(Action):  # 7
                     for rows in csv_reader:
                         if rows['Xizmat nomi - uz'] == xizmat_nomi:
                             detail_info = rows['Muxlisa text - UZ']
-                            link_ru = rows['Link ru']
+                            link_uz = rows['Link uz - lotincha']
                             dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
                                                      f"Xizmat haqida ma'lumot: {detail_info}")
-                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_ru}'>{link_ru}</a>")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
 
@@ -283,15 +283,15 @@ class ActionApplyTestResultUz(Action):  # 8
             intent_example = nlu_data['nlu'][8]['examples']
             if user_message in intent_example:
                 with open("../Muxlisa - Лист1.csv", "r") as new_reader:
-                    xizmat_nomi = "Тракторчи-машинист гувоҳномасини алмаштириш ёки йўқолгани ўрнига янгисини олиш"
+                    xizmat_nomi = "Абитуриент тест синовлари натижаси билан танишиш"
                     csv_reader = csv.DictReader(new_reader, delimiter=',')
                     for rows in csv_reader:
                         if rows['Xizmat nomi - uz'] == xizmat_nomi:
                             detail_info = rows['Muxlisa text - UZ']
-                            link_ru = rows['Link ru']
+                            link_uz = rows['Link uz - lotincha']
                             dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
                                                      f"Xizmat haqida ma'lumot: {detail_info}")
-                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_ru}'>{link_ru}</a>")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
 
@@ -301,7 +301,75 @@ class ActionApplyTestResultUz(Action):  # 8
             dispatcher.utter_message("Uzr, men bu savolga javob beraolmayman")
 
 
-class ActionDripIrrigationInfoUz(Action):  # 12
+class ActionSubmitApplicationForTractorDriverExamUz(Action):  # 9
+    def name(self) -> Text:
+        return "action_submit_application_for_tractor_driver_exam_uz"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_message = tracker.latest_message['text']
+
+        with open("../data/nlu_uz.yml", "r") as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "submit_application_for_tractor_driver_exam_uz"
+        if intent_name in nlu_data['nlu'][9]['intent']:
+            intent_example = nlu_data['nlu'][9]['examples']
+            if user_message in intent_example:
+                with open("../Muxlisa - Лист1.csv", "r") as new_reader:
+                    xizmat_nomi = "Тракторчи-машинист гувоҳномасини олиш учун имтиҳон топширишга рухсат бериш"
+                    csv_reader = csv.DictReader(new_reader, delimiter=',')
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - uz'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - UZ']
+                            link_uz = rows['Link uz - lotincha']
+                            dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
+                                                     f"Xizmat haqida ma'lumot: {detail_info}")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+        else:
+            dispatcher.utter_message("Uzr, men bu savolga javob beraolmayman")
+
+
+class ActionReplacingTractorDriversLicenseUz(Action):  # 10
+    def name(self) -> Text:
+        return "action_replacing_tractor_drivers_license_uz"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_message = tracker.latest_message['text']
+
+        with open("../data/nlu_uz.yml", "r") as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "replacing_tractor_drivers_license_uz"
+        if intent_name in nlu_data['nlu'][10]['intent']:
+            intent_example = nlu_data['nlu'][10]['examples']
+            if user_message in intent_example:
+                with open("../Muxlisa - Лист1.csv", "r") as new_reader:
+                    xizmat_nomi = "Тракторчи-машинист гувоҳномасини алмаштириш ёки йўқолгани ўрнига янгисини олиш"
+                    csv_reader = csv.DictReader(new_reader, delimiter=',')
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - uz'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - UZ']
+                            link_uz = rows['Link uz - lotincha']
+                            dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
+                                                     f"Xizmat haqida ma'lumot: {detail_info}")
+                            dispatcher.utter_message(f"xizmatga o'tish uchun havola: <a href='{link_uz}'>{link_uz}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+        else:
+            dispatcher.utter_message("Uzr, men bu savolga javob beraolmayman")
+
+
+class ActionDripIrrigationInfoUz(Action):  # 11
     def name(self) -> Text:
         return "action_drip_irrigation_info_uz"
 
@@ -312,8 +380,8 @@ class ActionDripIrrigationInfoUz(Action):  # 12
             nlu_data = yaml.safe_load(file)
 
         intent_name = "calculate_drip_irrigation_uz"
-        if intent_name in nlu_data['nlu'][8]['intent']:
-            intent_examples = nlu_data['nlu'][8]['examples']
+        if intent_name in nlu_data['nlu'][11]['intent']:
+            intent_examples = nlu_data['nlu'][11]['examples']
             if user_message in intent_examples:
                 with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
                     csv_reader = csv.DictReader(file_reader, delimiter=',')
@@ -339,3 +407,46 @@ class ActionDripIrrigationInfoUz(Action):  # 12
             dispatcher.utter_message(text='Uzr, men bu savolga javob beraolmayman')
 
         return []
+
+
+class ActionCheckingAthlesSportTitleUz(Action):  # 11
+    def name(self) -> Text:
+        return "action_checking_athletes_sport_title_uz"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_uz.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "checking_athletes_sport_title_uz"
+        if intent_name in nlu_data['nlu'][12]['intent']:
+            intent_examples = nlu_data['nlu'][12]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Спортчининг спорт унвонини текшириш'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - UZ']
+                            link_uz = rows['Link uz - lotincha']
+                            dispatcher.utter_message(f"Xizmat: {xizmat_nomi} \n"
+                                                     f"Xizmat haqida ma'lumot: {detail_info}")
+                            dispatcher.utter_message(f"Xizmatdan foydalanish va to'liq ma'lumot olish uchun havola:"
+                                                     f" <a href='{link_uz}'>{link_uz}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Uzr, men bu savolga javob beraolmayman')
+
+        return []
+
+
+

@@ -2,4 +2,5 @@
 /venv/
 /Rasa3/.idea/
 /.idea/
-```
+/Rasa3/models/
+/Rasa3/.rasa/

@@ -1,92 +1,373 @@
 version: "3.1"
 
 rules:
+  - rule: greet in russian
+    steps:
+      - intent: greet_ru
+      - action: utter_greet_ru
+
+  - rule: greet in uzbek
+    steps:
+      - intent: greet_uz
+      - action: utter_greet_uz
 
   # 1 -------------------------
   - rule: User asks about checking queue in student dormitory in russian
     steps:
       - intent: checking_the_queue_in_the_student_dormitory_ru
-      - action: action_student_dormitory_info_ru
+      - action: action_service_info_ru
 
   - rule: User asks about checking queue in student dormitory in uzbek
     steps:
       - intent: checking_the_queue_in_the_student_dormitory_uz
-      - action: action_student_dormitory_info_uz
+      - action: action_service_info_uz
 
   # 2 -------------------------
   - rule: User asks about applying for students dormitory in russian
     steps:
       - intent: apply_for_students_dormitory_ru
-      - action: action_apply_for_students_dormitory_ru
+      - action: action_service_info_ru
 
   - rule: User asks about applying for students dormitory in uzbek
     steps:
       - intent: apply_for_students_dormitory_uz
-      - action: action_apply_for_students_dormitory_uz
+      - action: action_service_info_uz
 
    # 3 -------------------------
   - rule: User asks about private invitation of foreign citizens in russian
     steps:
       - intent: private_invitation_of_foreign_citizens_ru
-      - action: action_private_invitation_of_foreign_citizens_ru
+      - action: action_service_info_ru
 
   - rule: User asks about private invitation of foreign citizens in uzbek
     steps:
       - intent: private_invitation_of_foreign_citizens_uz
-      - action: action_private_invitation_of_foreign_citizens_uz
+      - action: action_service_info_uz
 
   # 4 --------------------------------
   - rule: User asks about view airtickets on Uzairways in russian
     steps:
       - intent: view_airtickets_on_Uzairways_ru
-      - action: action_view_air_tickets_on_uzairways_ru
+      - action: action_service_info_ru
 
   - rule: User asks about view airtickets on Uzairways in uzbek
     steps:
       - intent: view_airtickets_on_Uzairways_uz
-      - action: action_view_air_tickets_on_uzairways_uz
+      - action: action_service_info_uz
 
   # 5 -------------------------
   - rule: User asks about obtaining certificate of return to UZB in russian
     steps:
       - intent: obtaining_certificate_of_return_to_UZB_ru
-      - action: action_obtaining_certificate_of_return_to_UZB_ru
+      - action: action_service_info_ru
 
   - rule: User asks about obtaining certificate of return to UZB in uzbek
     steps:
       - intent: obtaining_certificate_of_return_to_UZB_uz
-      - action: action_obtaining_certificate_of_return_to_UZB_uz
+      - action: action_service_info_uz
 
   # 6 -------------------------
   - rule: User asks about certification of applicants for judicial managers in russian
     steps:
       - intent: certification_of_applicants_for_judicial_managers_ru
-      - action: action_certification_of_applicants_for_judicial_managers_ru
+      - action: action_service_info_ru
 
   - rule: User asks about certification of applicants for judicial managers in uzbek
     steps:
       - intent: certification_of_applicants_for_judicial_managers_uz
-      - action: action_certification_of_applicants_for_judicial_managers_uz
+      - action: action_service_info_uz
 
   # 7 -------------------------
   - rule: User asks about registration of permanent residence abroad in russian
     steps:
       - intent: registration_of_permanent_residence_abroad_ru
-      - action: action_registration_of_permanent_residence_abroad_ru
+      - action: action_service_info_ru
 
   - rule: User asks about registration of permanent residence abroad in uzbek
     steps:
       - intent: registration_of_permanent_residence_abroad_uz
-      - action: action_registration_of_permanent_residence_abroad_uz
+      - action: action_service_info_uz
+
+  # 8 -------------------------
+  - rule: User asks about applicant test result in russian
+    steps:
+      - intent: applicant_test_result_ru
+      - action: action_service_info_ru
+
+  - rule: User asks about applicant test result in uzbek
+    steps:
+      - intent: applicant_test_result_uz
+      - action: action_service_info_uz
+
+  # 9 -------------------------
+
+  - rule: User asks about application for tractor driver exam in russian
+    steps:
+      - intent: submit_application_for_tractor_driver_exam_ru
+      - action: action_service_info_ru
+
+  - rule: User asks about application for tractor driver exam in uzbek
+    steps:
+      - intent: submit_application_for_tractor_driver_exam_uz
+      - action: action_service_info_uz
+
+  # 10 -------------------------
+  - rule: User asks about replacing tractor drivers license in russian
+    steps:
+      - intent: replacing_tractor_drivers_license_ru
+      - action: action_service_info_ru
+
+  - rule: User asks about replacing tractor drivers license in uzbek
+    steps:
+      - intent: replacing_tractor_drivers_license_uz
+      - action: action_service_info_uz
+
+  # 11 -------------------------
+  - rule: User asks about checking athletes sport title in russian
+    steps:
+      - intent: checking_athletes_sport_title_ru
+      - action: action_service_info_ru
+
+  - rule: User asks about checking athletes sport title in uzbek
+    steps:
+      - intent: checking_athletes_sport_title_uz
+      - action: action_service_info_uz
 
   # 12 -------------------------
   - rule: User asks about drip irrigation calculator in russian
     steps:
       - intent: calculate_drip_irrigation_ru
-      - action: action_drip_irrigation_info_ru
+      - action: action_service_info_ru
 
   - rule: User asks about drip irrigation calculator in uzbek
     steps:
       - intent: calculate_drip_irrigation_uz
-      - action: action_drip_irrigation_info_uz
+      - action: action_service_info_uz
 
+  # 13 -------------------------
+  - rule: User asks about information about sick leave in russian
+    steps:
+        - intent: information_about_sick_leave_ru
+        - action: action_service_info_ru
+
+  # 14 -------------------------
+  - rule: User asks about calendar of preventive examinations in russian
+    steps:
+        - intent: calendar_of_preventive_examinations_ru
+        - action: action_service_info_ru
+
+  # 15 -------------------------
+  - rule: User asks about obtaining an academic reference in russian
+    steps:
+        - intent: obtaining_an_academic_reference_ru
+        - action: action_service_info_ru
+
+  # 16 -------------------------
+  - rule: User asks about preparation of abstracts in russian
+    steps:
+        - intent: preparation_of_abstracts_ru
+        - action: action_service_info_ru
+
+  # 17 -------------------------
+  - rule: User asks about ownership of equipment in russian
+    steps:
+        - intent: ownership_of_equipment_ru
+        - action: action_service_info_ru
+
+  # 18 -------------------------
+  - rule: User asks about submission order privatization real estate objects in russian
+    steps:
+        - intent: submission_order_privatization_real_estate_objects_ru
+        - action: action_service_info_ru
+
+  # 19 -------------------------
+  - rule: User asks about submitting application for decommissioning of equipment in russian
+    steps:
+        - intent: submitting_application_for_decommissioning_of_equipment_ru
+        - action: action_service_info_ru
+
+  # 20 -------------------------
+  - rule: User asks about temporary registration of road construction equipment in russian
+    steps:
+        - intent: temporary_registration_of_road_construction_equipment_ru
+        - action: action_service_info_ru
+
+  # 21 -------------------------
+  - rule: User asks about digitization of archival documents in russian
+    steps:
+        - intent: digitization_of_archival_documents_ru
+        - action: action_service_info_ru
+
+  # 22 -------------------------
+  - rule: User asks about state registration of equipment in russian
+    steps:
+        - intent: state_registration_of_equipment_ru
+        - action: action_service_info_ru
+
+  # 23 -------------------------
+  - rule: User asks about provision of geological information package in russian
+    steps:
+        - intent: provision_of_geological_information_package_ru
+        - action: action_service_info_ru
+
+  # 24 -------------------------
+  - rule: User asks about obtaining information about mahalla activists region in russian
+    steps:
+        - intent: obtaining_information_about_mahalla_activists_region_ru
+        - action: action_service_info_ru
+
+  # 25 -------------------------
+  - rule: User asks about database registration in russian
+    steps:
+        - intent: database_registration_ru
+        - action: action_service_info_ru
+
+  # 26 -------------------------
+  - rule: User asks about registration of ECM in russian
+    steps:
+        - intent: registration_of_ECM_ru
+        - action: action_service_info_ru
+
+  # 27 -------------------------
+  - rule: User asks about registration of invention in russian
+    steps:
+        - intent: registration_of_invention_ru
+        - action: action_service_info_ru
+
+  # 28 -------------------------
+  - rule: User asks about registration of geographical indications in russian
+    steps:
+        - intent: registration_of_geographical_indications_ru
+        - action: action_service_info_ru
+
+  # 29 -------------------------
+  - rule: User asks about trademark registration in russian
+    steps:
+        - intent: trademark_registration_ru
+        - action: action_service_info_ru
+
+  # 30 -------------------------
+  - rule: User asks about providing index UDC in russian
+    steps:
+        - intent: providing_index_UDC_ru
+        - action: action_service_info_ru
+
+  # 31 -------------------------
+  - rule: User asks about campsites 2023 summer in russian
+    steps:
+        - intent: campsites_2023_summer_ru
+        - action: action_service_info_ru
+
+  # 32 -------------------------
+  - rule: User asks about general secondary education certificate information in russian
+    steps:
+        - intent: general_secondary_education_certificate_information_ru
+        - action: action_service_info_ru
+
+  # 33 -------------------------
+  - rule: User asks about information about medicines at medical centers in russian
+    steps:
+        - intent: information_about_medicines_at_medical_centers_ru
+        - action: action_service_info_ru
+
+  # 34 -------------------------
+  - rule: User asks about admission to school first grade in russian
+    steps:
+        - intent: admission_to_school_first_grade_ru
+        - action: action_service_info_ru
+
+  # 35 -------------------------
+  - rule: User asks about statements editing real estate information in russian
+    steps:
+        - intent: statements_editing_real_estate_information_ru
+        - action: action_service_info_ru
+
+  # 36 -------------------------
+  - rule: User asks about providing index LBC in russian
+    steps:
+        - intent: providing_index_LBC_ru
+        - action: action_service_info_ru
+
+  # 37 -------------------------
+  - rule: User asks about assignment ISSN in russian
+    steps:
+        - intent: assignment_ISSN_ru
+        - action: action_service_info_ru
+
+  # 38 -------------------------
+  - rule: User asks about certificate from place of study in russian
+    steps:
+        - intent: certificate_from_place_of_study_ru
+        - action: action_service_info_ru
+
+  # 39 -------------------------
+  - rule: User asks about connection to internet UZTELECOM in russian
+    steps:
+        - intent: connection_to_internet_UZTELECOM_ru
+        - action: action_service_info_ru
+
+  # 40 -------------------------
+  - rule: User asks about providing ISBN in russian
+    steps:
+        - intent: providing_ISBN_ru
+        - action: action_service_info_ru
+
+  # 41 -------------------------
+  - rule: User asks about information about performed verifications of meters in russian
+    steps:
+        - intent: information_about_performed_verifications_of_meters_ru
+        - action: action_service_info_ru
+
+  # 42 -------------------------
+  - rule: User asks about information about reference prices of medicines in russian
+    steps:
+        - intent: information_about_reference_prices_of_medicines_ru
+        - action: action_service_info_ru
+
+  # 43 -------------------------
+  - rule: User asks about information about vacant state property in russian
+    steps:
+        - intent: information_about_vacant_state_property_ru
+        - action: action_service_info_ru
+
+  # 44 -------------------------
+  - rule: User asks about debt check My Home in russian
+    steps:
+        - intent: debt_check_My_Home_ru
+        - action: action_service_info_ru
+
+  # 45 -------------------------
+  - rule: User asks about acquaintance with the doctor of the family clinic in russian
+    steps:
+        - intent: acquaintance_with_the_doctor_of_the_family_clinic_ru
+        - action: action_service_info_ru
+
+  # 46 -------------------------
+  - rule: User asks about information about payment for kindergarten in russian
+    steps:
+        - intent: information_about_payment_for_kindergarten_ru
+        - action: action_service_info_ru
+
+  # 47 -------------------------
+  - rule: User asks about familiarization with certificates of legal entities in russian
+    steps:
+        - intent: familiarization_with_certificates_of_legal_entities_ru
+        - action: action_service_info_ru
+
+  # 48 -------------------------
+  - rule: User asks about familiarization with information about employees in russian
+    steps:
+        - intent: familiarization_with_information_about_employees_ru
+        - action: action_service_info_ru
+
+  # 49 -------------------------
+  - rule: User asks about register of exporters with overdue receivables in russian
+    steps:
+        - intent: register_of_exporters_with_overdue_receivables_ru
+        - action: action_service_info_ru
+
+  # 50 -------------------------
+  - rule: User asks about data on availability of licenses and permits in russian
+    steps:
+        - intent: data_on_availability_of_licenses_and_permits_ru
+        - action: action_service_info_ru

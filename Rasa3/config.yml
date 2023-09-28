@@ -51,4 +51,5 @@ nlu:
       - "data/nlu.yml"
       - "data/nlu_uz.yml"
 
-
+threshold: 0.3
+ambiguity_threshold: 0.1

@@ -3,6 +3,10 @@ version: "3.1"
 intents:
   - greet_ru
   - greet_uz
+  - checking_athletes_sport_title_uz
+  - applicant_test_result_uz
+  - replacing_tractor_drivers_license_uz
+  - submit_application_for_tractor_driver_exam_uz
   - checking_the_queue_in_the_student_dormitory_ru
   - checking_the_queue_in_the_student_dormitory_uz
   - apply_for_students_dormitory_ru
@@ -19,6 +23,48 @@ intents:
   - registration_of_permanent_residence_abroad_uz
   - calculate_drip_irrigation_ru
   - calculate_drip_irrigation_uz
+  - applicant_test_result_ru
+  - submit_application_for_tractor_driver_exam_ru
+  - replacing_tractor_drivers_license_ru
+  - checking_athletes_sport_title_ru
+  - information_about_sick_leave_ru
+  - calendar_of_preventive_examinations_ru
+  - obtaining_an_academic_reference_ru
+  - preparation_of_abstracts_ru
+  - ownership_of_equipment_ru
+  - submission_order_privatization_real_estate_objects_ru
+  - submitting_application_for_decommissioning_of_equipment_ru
+  - temporary_registration_of_road_construction_equipment_ru
+  - digitization_of_archival_documents_ru
+  - state_registration_of_equipment_ru
+  - provision_of_geological_information_package_ru
+  - obtaining_information_about_mahalla_activists_region_ru
+  - database_registration_ru
+  - registration_of_ECM_ru
+  - registration_of_invention_ru
+  - registration_of_geographical_indications_ru
+  - trademark_registration_ru
+  - providing_index_UDC_ru
+  - campsites_2023_summer_ru
+  - general_secondary_education_certificate_information_ru
+  - information_about_medicines_at_medical_centers_ru
+  - admission_to_school_first_grade_ru
+  - statements_editing_real_estate_information_ru
+  - providing_index_LBC_ru
+  - assignment_ISSN_ru
+  - certificate_from_place_of_study_ru
+  - connection_to_internet_UZTELECOM_ru
+  - providing_ISBN_ru
+  - information_about_performed_verifications_of_meters_ru
+  - information_about_reference_prices_of_medicines_ru
+  - information_about_vacant_state_property_ru
+  - debt_check_My_Home_ru
+  - acquaintance_with_the_doctor_of_the_family_clinic_ru
+  - information_about_payment_for_kindergarten_ru
+  - familiarization_with_certificates_of_legal_entities_ru
+  - familiarization_with_information_about_employees_ru
+  - register_of_exporters_with_overdue_receivables_ru
+  - data_on_availability_of_licenses_and_permits_ru
 
 responses:
   utter_greet_ru:
@@ -37,22 +83,25 @@ responses:
     - text: "Salom! Sizga qanday yordam berishim mumkin?"
 
 actions:
-  - action_student_dormitory_info_ru
-  - action_student_dormitory_info_uz
-  - action_apply_for_students_dormitory_ru
-  - action_apply_for_students_dormitory_uz
-  - action_private_invitation_of_foreign_citizens_ru
-  - action_private_invitation_of_foreign_citizens_uz
-  - action_view_air_tickets_on_uzairways_ru
-  - action_view_air_tickets_on_uzairways_uz
-  - action_obtaining_certificate_of_return_to_UZB_ru
-  - action_obtaining_certificate_of_return_to_UZB_uz
-  - action_certification_of_applicants_for_judicial_managers_ru
-  - action_certification_of_applicants_for_judicial_managers_uz
-  - action_registration_of_permanent_residence_abroad_ru
-  - action_registration_of_permanent_residence_abroad_uz
-  - action_drip_irrigation_info_ru
-  - action_drip_irrigation_info_uz
+#  - action_student_dormitory_info_ru
+#  - action_student_dormitory_info_uz
+#  - action_apply_for_students_dormitory_ru
+#  - action_apply_for_students_dormitory_uz
+#  - action_private_invitation_of_foreign_citizens_ru
+#  - action_private_invitation_of_foreign_citizens_uz
+#  - action_view_air_tickets_on_uzairways_ru
+#  - action_view_air_tickets_on_uzairways_uz
+#  - action_obtaining_certificate_of_return_to_UZB_ru
+#  - action_obtaining_certificate_of_return_to_UZB_uz
+#  - action_certification_of_applicants_for_judicial_managers_ru
+#  - action_certification_of_applicants_for_judicial_managers_uz
+#  - action_registration_of_permanent_residence_abroad_ru
+#  - action_registration_of_permanent_residence_abroad_uz
+#  - action_drip_irrigation_info_ru
+#  - action_drip_irrigation_info_uz
+#  - action_service_info_ru
+  - action_service_info_ru
+  - action_service_info_uz
 
 session_config:
   session_expiration_time: 60

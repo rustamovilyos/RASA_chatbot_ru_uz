@@ -32,7 +32,8 @@ class ActionStudentDormitoryInfoRu(Action):  # 1
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -73,7 +74,8 @@ class ActionApplyForStudentsDormitoryRu(Action):  # 2
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -115,7 +117,8 @@ class ActionPrivateInvitationOfForeignCitizensRu(Action):  # 3
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -154,7 +157,8 @@ class ActionViewAirTicketsOnUzAirWaysRu(Action):  # 4
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -191,7 +195,8 @@ class ActionObtainingCertificateOfReturnToUzbRu(Action):  # 5
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -229,7 +234,8 @@ class ActionCertificationOfApplicantsForJudicialManagersRu(Action):  # 6
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -266,7 +272,8 @@ class ActionRegistrationOfPermanentResidenceAbroadRu(Action):  # 7
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -303,7 +310,8 @@ class ActionApplicantTestResultRu(Action):  # 8
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -341,7 +349,8 @@ class ActionSubmitApplicationForTractorDriverExamRu(Action):  # 9
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -379,7 +388,8 @@ class ActionReplacingTractorDriversLicenseRu(Action):  # 10
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
@@ -415,7 +425,373 @@ class ActionDripIrrigationInfoRu(Action):  # 11
                             link_ru = rows['Link ru']
                             dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
                                                      f"{detail_info}")
-                            dispatcher.utter_message(f"Подробнее об услуге вы можете узнать по ссылке:"
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionCheckingAthletesSportTitleRu(Action):  # 12
+    def name(self) -> Text:
+        return "action_checking_athletes_sport_title_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "checking_athletes_sport_title_ru"
+        if intent_name in nlu_data['nlu'][12]['intent']:
+            intent_examples = nlu_data['nlu'][12]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Получение информации о спортивных званиях и разрядах спортсмена'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"Информация об услуге: {detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionInformationAboutSickLeaveRu(Action):  # 13
+    def name(self) -> Text:
+        return "action_information_about_sick_leave_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "information_about_sick_leave_ru"
+        if intent_name in nlu_data['nlu'][13]['intent']:
+            intent_examples = nlu_data['nlu'][13]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Сведения о больничном листе'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"{detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionCalendarOfPreventiveExaminationsRu(Action):  # 14
+    def name(self) -> Text:
+        return "action_calendar_of_preventive_examinations_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "calendar_of_preventive_examinations_ru"
+        if intent_name in nlu_data['nlu'][14]['intent']:
+            intent_examples = nlu_data['nlu'][14]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Календарь профилактических осмотров населения и программ скрининга'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"Информация об услуге: {detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+######################################################################################################################
+class ActionObtainingAnAcademicReferenceRu(Action):  # 15
+    def name(self) -> Text:
+        return "action_obtaining_an_academic_reference_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_message = tracker.latest_message['text']
+
+        with open("../data/nlu_ru.yml", "r") as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "submit_application_for_tractor_driver_exam_ru"
+        if intent_name in nlu_data['nlu'][15]['intent']:
+            intent_example = nlu_data['nlu'][15]['examples']
+            if user_message in intent_example:
+                with open("../Muxlisa - Лист1.csv", "r") as new_reader:
+                    xizmat_nomi = "Получение академической справки (транскрипта) для студентов высших учебных заведений"
+                    csv_reader = csv.DictReader(new_reader, delimiter=',')
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"{detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+        else:
+            dispatcher.utter_message("Простите, я не могу ответит на ваш вопрос")
+
+        return []
+
+
+class ActionPreparationOfAbstractsRu(Action):  # 16
+    def name(self) -> Text:
+        return "action_preparation_of_abstracts_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        user_message = tracker.latest_message['text']
+
+        with open("../data/nlu_ru.yml", "r") as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "preparation_of_abstracts_ru"
+        if intent_name in nlu_data['nlu'][16]['intent']:
+            intent_example = nlu_data['nlu'][16]['examples']
+            if user_message in intent_example:
+                with open("../Muxlisa - Лист1.csv", "r") as new_reader:
+                    xizmat_nomi = ("Подготовка аннотации турецких, персидских и арабских документов, созданных с"
+                                   " помощью арабского алфавита")
+                    csv_reader = csv.DictReader(new_reader, delimiter=',')
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"{detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+        else:
+            dispatcher.utter_message("Простите, я не могу ответит на ваш вопрос")
+
+        return []
+
+
+class ActionDripIrrigationInfoRu(Action):  # 11
+    def name(self) -> Text:
+        return "action_drip_irrigation_info_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "calculate_drip_irrigation_ru"
+        if intent_name in nlu_data['nlu'][11]['intent']:
+            intent_examples = nlu_data['nlu'][11]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Калькулятор капельного орошения'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"{detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionCheckingAthletesSportTitleRu(Action):  # 12
+    def name(self) -> Text:
+        return "action_checking_athletes_sport_title_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "checking_athletes_sport_title_ru"
+        if intent_name in nlu_data['nlu'][12]['intent']:
+            intent_examples = nlu_data['nlu'][12]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Получение информации о спортивных званиях и разрядах спортсмена'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"Информация об услуге: {detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionInformationAboutSickLeaveRu(Action):  # 13
+    def name(self) -> Text:
+        return "action_information_about_sick_leave_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "information_about_sick_leave_ru"
+        if intent_name in nlu_data['nlu'][13]['intent']:
+            intent_examples = nlu_data['nlu'][13]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Сведения о больничном листе'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"{detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
+                                                     f" <a href='{link_ru}'>{link_ru}</a>")
+
+                            redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+                            redis_client.set(f"{intent_name}", xizmat_nomi)
+                            redis_client.set(f"{intent_name}_description", detail_info)
+
+                            redis_client.close()
+                            print(f'service_name saved: {xizmat_nomi}\n'
+                                  f'service_description saved: {detail_info}')
+        else:
+            dispatcher.utter_message(text='Простите, я не могу ответит на ваш вопрос')
+
+        return []
+
+
+class ActionCalendarOfPreventiveExaminationsRu(Action):  # 14
+    def name(self) -> Text:
+        return "action_calendar_of_preventive_examinations_ru"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        user_message = tracker.latest_message['text']
+
+        with open('../data/nlu_ru.yml', 'r') as file:
+            nlu_data = yaml.safe_load(file)
+
+        intent_name = "calendar_of_preventive_examinations_ru"
+        if intent_name in nlu_data['nlu'][14]['intent']:
+            intent_examples = nlu_data['nlu'][14]['examples']
+            if user_message in intent_examples:
+                with open("../Muxlisa - Лист1.csv", mode='r') as file_reader:
+                    csv_reader = csv.DictReader(file_reader, delimiter=',')
+                    xizmat_nomi = 'Календарь профилактических осмотров населения и программ скрининга'
+                    for rows in csv_reader:
+                        if rows['Xizmat nomi - ru'] == xizmat_nomi:
+                            detail_info = rows['Muxlisa text - RU']
+                            link_ru = rows['Link ru']
+                            dispatcher.utter_message(f"Название услуга: {xizmat_nomi} \n"
+                                                     f"Информация об услуге: {detail_info}")
+                            dispatcher.utter_message(f"Чтобы воспользоваться сервисом и получить полную информацию,"
+                                                     f" перейдите по ссылке:"
                                                      f" <a href='{link_ru}'>{link_ru}</a>")
 
                             redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)

@@ -12,8 +12,6 @@ nlu:
       - Hayrli kech
       - Assalom
 
-
-
   - intent: checking_the_queue_in_the_student_dormitory_uz  # index = 1
     # Талабалар турар жойига навбатни текшириш (1-курс талабалари учун)
     examples: |
@@ -36,7 +34,6 @@ nlu:
       - Yotoqxona uchun navbatni tekshirishda kerak bo'ladigan hujjatlar
       - Turar joy uchun navbatni tekshirishda kerak bo‘ladigan hujjatlar qanday tayyorlanadi?
 
-
   - intent: apply_for_students_dormitory_uz  # index = 2
     # Талабалар турар жойига жойлашиш учун ариза юбориш (1-курс талабалари учун)
     examples: |
@@ -57,10 +54,10 @@ nlu:
       - Tafsilotlarni aniqlashtirish uchun yotoqxona ma'muriyati bilan qanday bog'lanishim mumkin?
       - Yotoqxonaga arizam ma'qullangandan keyin nimalar qilishim kerak?
 
-
   - intent: private_invitation_of_foreign_citizens_uz  # index = 3
     # Чет эл фуқароси ва фуқаролиги бўлмаган шахсларни Ўзбекистон Республикасига хусусий таклиф қилишга ариза юбориш
     examples: |
+      - Chet el fuqarosi va fuqaroligi boʻlmagan shaxslarni Oʻzbekiston Respublikasiga xususiy taklif qilishga ariza yuborish
       - Chet el fuqarosi va fuqaroligi bo‘lmagan shaxslarni O‘zbekiston Respublikasiga xususiy taklif qilishga ariza yuborish
       - Xususiy taklif berish uchun ariza qanday yuboriladi?
       - Ariza yuborishning shartlari nima?
@@ -86,7 +83,8 @@ nlu:
 
   - intent: view_airtickets_on_Uzairways_uz  # index = 4
     # Uzairways авиакомпаниясида мавжуд авиачипталарни кўриш
-    examples: |
+    examples:
+      - Uzairways aviakompaniyasida mavjud aviachiptalarni koʻrish
       - Uzairways aviakompaniyasida mavjud aviachiptalarni ko‘rish
       - Uzairways aviachiplari jadvalini qanday ko'rish mumkin?
       - Uzairways aviasyohatlarining narxlari qanday aniqlanadi?
@@ -134,14 +132,13 @@ nlu:
       - Guvohnoma olish jarayonida to‘lovlar va to‘lovlar qanday amalga oshiriladi?
       - Guvohnoma olishning amal qilish muddati qanday?
       - Qaytish guvohnomasi ishlatish bo‘yicha qanday cheklar va qoidalar mavjud?
-      - Men o‘zimni zaranjda guvohnoma arizasini yuborishim mumkinmi?
       - Guvohnoma olish jarayonini student sifatida qanday amalga oshirish kerak?
       - Qaytish guvohnomasi tarqatuvchi tashkilot bilan bog‘lanish uchun qanday aloqa qilish mumkin?
 
   - intent: certification_of_applicants_for_judicial_managers_uz  # index = 6
     # Суд бошқарувчилари талабгорларини аттестациядан (қайта аттестациядан) ўтказиш ва уларга малака аттестатини бериш
     examples: |
-      - Sud boshqaruvchilari talabgorlarini attestatsiyadan (qayta attestatsiyadan) o‘tkazish va ularga malaka attestatini berish
+      - Sud boshqaruvchilari talabgorlarini attestatsiyadan (qayta attestatsiyadan) oʻtkazish va ularga malaka attestatini berish
       - Sud boshqaruvchilari qanday attestatsiyadan o‘tkazilishi mumkin?
       - Attestatsiyada talabgorlar uchun talablar va shartlar qanday?
       - Talabgorlar attestatsiyaga qatnashish uchun qanday hujjatlar kerak?
@@ -184,8 +181,6 @@ nlu:
       - Xorijda yashashga chiqish haqida moliyatiy masalalarni kim yordam beradi?
       - Xorijga chiqishdan so‘ng qanday bank xizmatlari olishi mumkin?
       - Qanday diplomatik aloqalar bilan bog‘lanib turgan kerak, xorijda yashash uchun chiqish uchun?
-
-
 
   - intent: applicant_test_result_uz  # index = 8
     # Абитуриент тест синовлари натижаси билан танишиш
@@ -240,8 +235,8 @@ nlu:
 
   - intent: replacing_tractor_drivers_license_uz  # 10
     #  Тракторчи-машинист гувоҳномасини алмаштириш ёки йўқолгани ўрнига янгисини олиш
-    example: |
-      - Traktorchi-mashinist guvohnomasini almashtirish yoki yo‘qolgani o‘rniga yangisini olish
+    examples: |
+      - Traktorchi-mashinist guvohnomasini almashtirish yoki yoʻqolgani oʻrniga yangisini olish
       - Traktorchi-mashinist guvohnomasini almashtirish jarayoni qanday o‘tadi?
       - Guvohnoma almashtirish uchun qanday hujjatlar kerak?
       - Guvohnoma almashtirish uchun qancha vaqt kerak?
@@ -262,7 +257,6 @@ nlu:
       - Guvohnoma almashtirish uchun qanday ma’lumotlarni to‘ldirish kerak?
       - Guvohnoma almashtirish jarayonida qanday qaror qabul qilinadi?
       - Guvohnoma almashtirish jarayonida nima bilan yordam beriladi?
-
 
   - intent: calculate_drip_irrigation_uz  # index = 11
     # Томчилатиб суғориш калькулятори
@@ -291,4 +285,28 @@ nlu:
       - Sug‘orish kalkulyatori qanday ishlaydi?
 
 
+  - intent: checking_athletes_sport_title_uz  # index = 12
+    # Спортчининг спорт унвонини текшириш
+    examples: |
+      - Sportchining sport unvonini tekshirish
+      - Sportchining sport unvonini tekshirish jarayoni qanday o‘tadi?
+      - Sport unvonini olish uchun qanday shartlar bajariladi?
+      - Sportchining sport unvonini olish uchun qancha vaqt kerak?
+      - Sport unvonini olish jarayoni qanday amalga oshiriladi?
+      - Sport unvonini olish uchun qancha muddat davom etadi?
+      - Sportchining sport unvonini tekshirish uchun qancha to‘lov qilish kerak?
+      - Sport unvonini olish uchun onlayn ariza topshirish mumkinmi?
+      - Sportchining sport unvonini olish uchun qanday ma’lumotlarni taqdim etish kerak?
+      - Sport unvonini olish jarayonida qanday qaror qabul qilinadi?
+      - Sportchining sport unvonini tekshirish uchun qancha to‘lovlarni muddati boricha o‘tish kerak?
+      - Sport unvonini olish jarayonida yordam beradigan xizmatlar mavjudmi?
+      - Sportchining sport unvonini olish jarayonida muammolar chiqqanda nima qilish kerak?
+      - Sport unvonini olish uchun qanday shartlar bajariladi?
+      - Sportchining sport unvonini tekshirish jarayoni qancha muddat davom etadi?
+      - Sport unvonini olish uchun qanday ma’lumotlarni to‘ldirish kerak?
+      - Sportchining sport unvonini olish jarayonida qanday qulayliklar mavjud?
+      - Sport unvonini olish jarayonida muammolar chiqqanda nima qilish kerak?
+      - Sportchining sport unvonini olish uchun qanday ma’lumotlarni to‘ldirish kerak?
+      - Sport unvonini olish jarayonida nima bilan yordam beriladi?
+      - Sportchining sport unvonini olish uchun qanday qulayliklar mavjud?
 

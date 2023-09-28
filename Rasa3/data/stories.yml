@@ -1,24 +1,499 @@
 version: "3.1"
 
 stories:
+# RU 1 ---------------------------------------------------
+- story: User asks about checking queue in student dormitory in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: checking_the_queue_in_the_student_dormitory_ru
+  - action: action_service_info_ru
 
+# RU 2 ---------------------------------------------------
+- story: User asks about applying for students dormitory in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: apply_for_students_dormitory_ru
+  - action: action_service_info_ru
+
+# RU 3 ---------------------------------------------------
+- story: User asks about private invitation of foreign citizens in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: private_invitation_of_foreign_citizens_ru
+  - action: action_service_info_ru
+
+# RU 4 ---------------------------------------------------
+- story: User asks about viewing air tickets on uzairways in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: view_air_tickets_on_uzairways_ru
+  - action: action_service_info_ru
+    
+# RU 5 ---------------------------------------------------
+- story: User asks about obtaining certificate of return to UZB in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: obtaining_certificate_of_return_to_UZB_ru
+  - action: action_service_info_ru
+
+# RU 6 ---------------------------------------------------
+- story: User asks about certification of applicants for judicial managers in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: certification_of_applicants_for_judicial_managers_ru
+  - action: action_service_info_ru
+    
+# RU 7 ---------------------------------------------------
+- story: User asks about registration of permanent residence abroad in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: registration_of_permanent_residence_abroad_ru
+  - action: action_service_info_ru
+
+# RU 8 ---------------------------------------------------
+- story: User asks about applicant's test results in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: applicant_test_results_ru
+  - action: action_service_info_ru
+
+# RU 9 ---------------------------------------------------
+- story: User asks about submitting an application for tractor driver exam in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: submit_an_application_for_tractor_driver_exam_ru
+  - action: action_service_info_ru
+
+# RU 10 ---------------------------------------------------
+- story: User asks about replacing tractor driver's license in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: replacing_tractor_drivers_license_ru
+  - action: action_service_info_ru
+
+# RU 11 ---------------------------------------------------
 - story: User asks about drip irrigation calculator
   steps:
   - intent: greet_ru
   - action: utter_greet_ru
   - intent: calculate_drip_irrigation_ru
-  - action: action_drip_irrigation_info_ru
+  - action: action_service_info_ru
 
-- story: User asks about checking queue in student dormitory
+# RU 12 ---------------------------------------------------
+- story: User asks about checking athletes sport title in russian
   steps:
   - intent: greet_ru
   - action: utter_greet_ru
-  - intent: checking_the_queue_in_the_student_dormitory_ru
-  - action: action_student_dormitory_info_ru
+  - intent: checking_athletes_sport_title_ru
+  - action: action_service_info_ru
 
+# RU 13 ---------------------------------------------------
+- story: User asks about information about sick leave in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_sick_leave_ru
+  - action: action_service_info_ru
+
+# RU 14 ---------------------------------------------------
+- story: User asks about calendar of preventive examinations in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: calendar_of_preventive_examinations_ru
+  - action: action_service_info_ru
+
+# RU 15 ---------------------------------------------------
+- story: User asks about obtaining an academic reference in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: obtaining_an_academic_reference_ru
+  - action: action_service_info_ru
+
+# RU 16 ---------------------------------------------------
+- story: User asks about preparation of abstracts in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: preparation_of_abstracts_ru
+  - action: action_service_info_ru
+
+# RU 17 ---------------------------------------------------
+- story: User asks about ownership of equipment in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: ownership_of_equipment_ru
+  - action: action_service_info_ru
+
+# RU 18 ---------------------------------------------------
+- story: User asks about submission order privatization real estate objects in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: submission_order_privatization_real_estate_objects_ru
+  - action: action_service_info_ru
+
+# RU 19 ---------------------------------------------------
+- story: User asks about submitting application for decommissioning of equipment in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: submitting_application_for_decommissioning_of_equipment_ru
+  - action: action_service_info_ru
+
+# RU 20 ---------------------------------------------------
+- story: User asks about temporary registration of road construction equipment in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: temporary_registration_of_road_construction_equipment_ru
+  - action: action_service_info_ru
+
+# RU 21 ---------------------------------------------------
+- story: User asks about digitization of archival documents in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: digitization_of_archival_documents_ru
+  - action: action_service_info_ru
+
+# RU 22 ---------------------------------------------------
+- story: User asks about state registration of equipment in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: state_registration_of_equipment_ru
+  - action: action_service_info_ru
+
+# RU 23 ---------------------------------------------------
+- story: User asks about provision of geological information package in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: provision_of_geological_information_package_ru
+  - action: action_service_info_ru
+
+# RU 24 ---------------------------------------------------
+- story: User asks about obtaining information about mahalla activists region in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: obtaining_information_about_mahalla_activists_region_ru
+  - action: action_service_info_ru
+
+# RU 25 ---------------------------------------------------
+- story: User asks about database registration in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: database_registration_ru
+  - action: action_service_info_ru
+
+# RU 26 ---------------------------------------------------
+- story: User asks about registration of ECM in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: registration_of_ECM_ru
+  - action: action_service_info_ru
+
+# RU 27 ---------------------------------------------------
+- story: User asks about registration of invention in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: registration_of_invention_ru
+  - action: action_service_info_ru
+
+# RU 28 ---------------------------------------------------
+- story: User asks about registration of geographical indications in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: registration_of_geographical_indications_ru
+  - action: action_service_info_ru
+
+# RU 29 ---------------------------------------------------
+- story: User asks about trademark registration in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: trademark_registration_ru
+  - action: action_service_info_ru
+
+# RU 30 ---------------------------------------------------
+- story: User asks about providing index UDC in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: providing_index_UDC_ru
+  - action: action_service_info_ru
+
+# RU 31 ---------------------------------------------------
+- story: User asks about campsites 2023 summer in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: campsites_2023_summer_ru
+  - action: action_service_info_ru
+
+# RU 32 ---------------------------------------------------
+- story: User asks about general secondary education certificate information in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: general_secondary_education_certificate_information_ru
+  - action: action_service_info_ru
+
+# RU 33 ---------------------------------------------------
+- story: User asks about information about medicines at medical centers in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_medicines_at_medical_centers_ru
+  - action: action_service_info_ru
+
+# RU 34 ---------------------------------------------------
+- story: User asks about admission to school first grade in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: admission_to_school_first_grade_ru
+  - action: action_service_info_ru
+
+# RU 35 ---------------------------------------------------
+- story: User asks about statements editing real estate information in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: statements_editing_real_estate_information_ru
+  - action: action_service_info_ru
+
+# RU 36 ---------------------------------------------------
+- story: User asks about providing index LBC in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: providing_index_LBC_ru
+  - action: action_service_info_ru
+
+# RU 37 ---------------------------------------------------
+- story: User asks about assignment ISSN in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: assignment_ISSN_ru
+  - action: action_service_info_ru
+
+# RU 38 ---------------------------------------------------
+- story: User asks about certificate from place of study in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: certificate_from_place_of_study_ru
+  - action: action_service_info_ru
+
+# RU 39 ---------------------------------------------------
+- story: User asks about connection to internet UZTELECOM in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: connection_to_internet_UZTELECOM_ru
+  - action: action_service_info_ru
+
+# RU 40 ---------------------------------------------------
+- story: User asks about providing ISBN in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: providing_ISBN_ru
+  - action: action_service_info_ru
+
+# RU 41 ---------------------------------------------------
+- story: User asks about information about performed verifications of meters in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_performed_verifications_of_meters_ru
+  - action: action_service_info_ru
+
+# RU 42 ---------------------------------------------------
+- story: User asks about information about reference prices of medicines in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_reference_prices_of_medicines_ru
+  - action: action_service_info_ru
+
+# RU 43 ---------------------------------------------------
+- story: User asks about information about vacant state property in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_vacant_state_property_ru
+  - action: action_service_info_ru
+
+# RU 44 ---------------------------------------------------
+- story: User asks about debt check My Home in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: debt_check_My_Home_ru
+  - action: action_service_info_ru
+
+# RU 45 ---------------------------------------------------
+- story: User asks about acquaintance with the doctor of the family clinic in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: acquaintance_with_the_doctor_of_the_family_clinic_ru
+  - action: action_service_info_ru
+
+# RU 46 ---------------------------------------------------
+- story: User asks about information about payment for kindergarten in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: information_about_payment_for_kindergarten_ru
+  - action: action_service_info_ru
+
+# RU 47 ---------------------------------------------------
+- story: User asks about familiarization with certificates of legal entities in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: familiarization_with_certificates_of_legal_entities_ru
+  - action: action_service_info_ru
+
+# RU 48 ---------------------------------------------------
+- story: User asks about familiarization with information about employees in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: familiarization_with_information_about_employees_ru
+  - action: action_service_info_ru
+
+# RU 49 ---------------------------------------------------
+- story: User asks about register of exporters with overdue receivables in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: register_of_exporters_with_overdue_receivables_ru
+  - action: action_service_info_ru
+
+# RU 50 ---------------------------------------------------
+- story: User asks about data on availability of licenses and permits in russian
+  steps:
+  - intent: greet_ru
+  - action: utter_greet_ru
+  - intent: data_on_availability_of_licenses_and_permits_ru
+  - action: action_service_info_ru
+
+# UZ 1 ---------------------------------------------------
 - story: User asks about checking queue in student dormitory
   steps:
   - intent: greet_uz
   - action: utter_greet_uz
   - intent: checking_the_queue_in_the_student_dormitory_uz
-  - action: action_student_dormitory_info_uz
+  - action: action_service_info_uz
+
+# UZ 2 ---------------------------------------------------
+- story: User asks about applying for students dormitory
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: apply_for_students_dormitory_uz
+  - action: action_service_info_uz
+
+# UZ 3 ---------------------------------------------------
+- story: User asks about private invitation of foreign citizens
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: private_invitation_of_foreign_citizens_uz
+  - action: action_service_info_uz
+
+# UZ 4 ---------------------------------------------------
+- story: User asks about viewing air tickets on uzairways
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: view_air_tickets_on_uzairways_uz
+  - action: action_service_info_uz
+
+# UZ 5 ---------------------------------------------------
+- story: User asks about obtaining certificate of return to UZB
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: obtaining_certificate_of_return_to_UZB_uz
+  - action: action_service_info_uz
+
+# UZ 6 ---------------------------------------------------
+- story: User asks about certification of applicants for judicial managers
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: certification_of_applicants_for_judicial_managers_uz
+  - action: action_service_info_uz
+
+# UZ 7 ---------------------------------------------------
+- story: User asks about registration of permanent residence abroad
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: registration_of_permanent_residence_abroad_uz
+  - action: action_service_info_uz
+
+# UZ 8 ---------------------------------------------------
+- story: User asks about applicant's test results
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: applicant_test_results_uz
+  - action: action_service_info_uz
+
+# UZ 9 ---------------------------------------------------
+- story: User asks about submitting an application for tractor driver exam
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: submit_an_application_for_tractor_driver_exam_uz
+  - action: action_service_info_uz
+
+# UZ 10 ---------------------------------------------------
+- story: User asks about replacing tractor driver's license
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: replacing_tractor_drivers_license_uz
+  - action: action_service_info_uz
+
+# UZ 11 ---------------------------------------------------
+
+- story: User asks about calculating drip irrigation
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: calculate_drip_irrigation_uz
+  - action: action_service_info_uz
+
+# UZ 12 ---------------------------------------------------
+- story: User asks about checking athletes sport title
+  steps:
+  - intent: greet_uz
+  - action: utter_greet_uz
+  - intent: checking_athletes_sport_title_uz
+  - action: action_service_info_uz
