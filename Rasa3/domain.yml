@@ -66,6 +66,10 @@ intents:
   - register_of_exporters_with_overdue_receivables_ru
   - data_on_availability_of_licenses_and_permits_ru
 
+  - covid_19_vaccination_uz
+  - send_mail_uz
+  - get_credit_history_uz
+  - uzbek_exit_check_uz
 responses:
   utter_greet_ru:
     - text: "Привет, С чем могу помочь?"
@@ -73,15 +77,15 @@ responses:
     - text: "Привет, чего желаете?"
     - text: "Привет! Как я могу помочь вам сегодня?"
     - text: "Привет, чем могу помочь?"
-    - text: "Здравствуйте! Какая услуга вас интересует?"
 
+    - text: "Здравствуйте! Какая услуга вас интересует?"
   utter_greet_uz:
     - text: "Salom, qanday yordam berishim mumkin?"
     - text: "Salom, qanday savolingiz bor?"
     - text: "Salom, qanday yordam kerak?"
     - text: "Salom, qanday yordam bera olaman?"
-    - text: "Salom! Sizga qanday yordam berishim mumkin?"
 
+    - text: "Salom! Sizga qanday yordam berishim mumkin?"
 actions:
 #  - action_student_dormitory_info_ru
 #  - action_student_dormitory_info_uz

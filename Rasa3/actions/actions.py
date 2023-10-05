@@ -80,7 +80,6 @@ class ActionServiceInfoUz(Action):
 
                 if user_message in intent_examples:
                     examples_list = intent_examples[2:].split('\n')
-                    print(examples_list)
                     with open("../Muxlisa.xlsx - Лист1.csv", "r", encoding="utf-8") as file_reader:
                         csv_reader = csv.reader(file_reader, delimiter=',')
                         for rows in csv_reader:

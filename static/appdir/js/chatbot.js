@@ -19,10 +19,7 @@ $('.usrInput').on('keyup keypress', function (e) {
 
 //------------------------------------- Set user response------------------------------------
 function setUserResponse(val) {
-
-
-    const UserResponse = '<img class="userAvatar" alt="user" src="./static/appdir/img/userAvatar.jpg">' +
-        '<p class="userMsg">' + val + ' </p><div class="clearfix"></div>';
+    const UserResponse = '<div class="clearfix right-messages"><p class="userMsg">' + val + '</p><img class="userAvatar" alt="user" src="./static/appdir/img/userAvatar.jpg"></div>';
     $(UserResponse).appendTo('.chats').show('slow');
     $(".usrInput").val('');
     scrollToBottomOfResults();
@@ -68,10 +65,10 @@ function setBotResponse(val) {
         let msg;
         if (val.length < 1) {
             //if there is no response from Rasa
-            msg = 'Простите, я не могу ответит на ваш вопрос \n Uzr, men bu savolga javob beraolmayman';
+            msg = 'Server not available. Please try again later.';
 
-            BotResponse = '<img class="botAvatar" src="./static/appdir/img/bot.ico" alt="bot">' +
-                '<p class="botMsg">' + msg + '</p><div class="clearfix"></div>';
+            BotResponse = '<div class="clearfix"><img class="botAvatar" src="./static/appdir/img/bot.ico" alt="bot">' +
+                '<p class="botMsg">' + msg + '</p></div>';
             $(BotResponse).appendTo('.chats').hide().fadeIn(1000);
 
         } else {
@@ -79,8 +76,8 @@ function setBotResponse(val) {
             for (let i = 0; i < val.length; i++) {
                 //check if there is text message
                 if (val[i].hasOwnProperty("text")) {
-                    BotResponse = '<img class="botAvatar" src="./static/appdir/img/bot.ico" alt="bot">' +
-                        '<p class="botMsg">' + val[i].text + '</p><div class="clearfix"></div>';
+                    BotResponse = '<div class="clearfix"><img class="botAvatar" src="./static/appdir/img/bot.ico" alt="bot">' +
+                        '<p class="botMsg">' + val[i].text + '</p></div>';
                     $(BotResponse).appendTo('.chats').hide().fadeIn(1000);
                 }
 
@@ -88,7 +85,7 @@ function setBotResponse(val) {
                 if (val[i].hasOwnProperty("image")) {
                     BotResponse = '<div class="singleCard">' +
                         '<img class="imgcard" src="' + val[i].image + '">' +
-                        '</div><div class="clearfix">';
+                        '</div>';
                     $(BotResponse).appendTo('.chats').hide().fadeIn(1000);
                 }
 

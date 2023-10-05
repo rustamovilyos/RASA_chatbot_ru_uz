@@ -30,7 +30,7 @@ stories:
   steps:
   - intent: greet_ru
   - action: utter_greet_ru
-  - intent: view_air_tickets_on_uzairways_ru
+  - intent: view_airtickets_on_Uzairways_ru
   - action: action_service_info_ru
     
 # RU 5 ---------------------------------------------------
@@ -62,7 +62,7 @@ stories:
   steps:
   - intent: greet_ru
   - action: utter_greet_ru
-  - intent: applicant_test_results_ru
+  - intent: applicant_test_result_ru
   - action: action_service_info_ru
 
 # RU 9 ---------------------------------------------------
@@ -70,7 +70,7 @@ stories:
   steps:
   - intent: greet_ru
   - action: utter_greet_ru
-  - intent: submit_an_application_for_tractor_driver_exam_ru
+  - intent: submit_application_for_tractor_driver_exam_ru
   - action: action_service_info_ru
 
 # RU 10 ---------------------------------------------------
@@ -430,7 +430,7 @@ stories:
   steps:
   - intent: greet_uz
   - action: utter_greet_uz
-  - intent: view_air_tickets_on_uzairways_uz
+  - intent: view_airtickets_on_Uzairways_uz
   - action: action_service_info_uz
 
 # UZ 5 ---------------------------------------------------
@@ -462,7 +462,7 @@ stories:
   steps:
   - intent: greet_uz
   - action: utter_greet_uz
-  - intent: applicant_test_results_uz
+  - intent: applicant_test_result_uz
   - action: action_service_info_uz
 
 # UZ 9 ---------------------------------------------------
@@ -470,7 +470,7 @@ stories:
   steps:
   - intent: greet_uz
   - action: utter_greet_uz
-  - intent: submit_an_application_for_tractor_driver_exam_uz
+  - intent: submit_application_for_tractor_driver_exam_uz
   - action: action_service_info_uz
 
 # UZ 10 ---------------------------------------------------
